@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - AppBrake</title>
+    <style>
+        :root {
+            --primary: #E11D48;
+            --primary-dark: #BE123C;
+            --bg: #0F172A;
+            --surface: #1E293B;
+            --border: #334155;
+            --text-primary: #F8FAFC;
+            --text-secondary: #94A3B8;
+            --accent-green: #10B981;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 48px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .logo-badge {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--primary), #9F1239);
+            color: #FFFFFF;
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-top: 36px;
+            margin-bottom: 16px;
+            border-left: 4px solid var(--primary);
+            padding-left: 12px;
+        }
+
+        p, ul {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        .highlight-box {
+            background-color: rgba(225, 29, 72, 0.08);
+            border: 1px solid rgba(225, 29, 72, 0.25);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            color: #FDA4AF;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .permission-card {
+            background-color: #0F172A;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin-bottom: 14px;
+        }
+
+        .permission-name {
+            color: #38BDF8;
+            font-weight: 700;
+            font-size: 15px;
+            margin-bottom: 6px;
+        }
+
+        a {
+            color: #38BDF8;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #7DD3FC;
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 16px 12px;
+            }
+            .container {
+                padding: 24px 18px;
+            }
+            h1 {
+                font-size: 26px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo-badge">AppBrake</div>
+        <h1>Privacy Policy</h1>
+        <div class="last-updated">Effective Date: September 1, 2026</div>
+    </header>
+
+    <div class="highlight-box">
+        <p>🔒 <strong>Privacy First:</strong> AppBrake does not require any account creation and never uploads, sells, or syncs your personal app usage data to external developer servers. All app statistics, locked lists, and logs remain 100% on your local device.</p>
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>This Privacy Policy explains how <strong>AppBrake</strong> ("we", "our", or "the App") handles information when you install and use our Android digital wellbeing application. We are committed to protecting your privacy and ensuring transparency about how the app functions.</p>
+
+    <h2>2. Information We Collect and Store Locally</h2>
+    <p>AppBrake functions offline for its core features. The following information is stored strictly within your device's private local database (Room SQLite):</p>
+    <ul>
+        <li><strong>Protected Apps List:</strong> Packages you manually select to lock or pause.</li>
+        <li><strong>Friction & Pause History:</strong> Logs of your pause attempts, completed challenges, and resistance streaks.</li>
+        <li><strong>User Preferences:</strong> Challenge modes selected (quotes, breathing, questions, vocabulary), reflection timers, and theme preferences.</li>
+    </ul>
+    <p>This data is never transmitted to us or any third party.</p>
+
+    <h2>3. Android Permissions & Justifications</h2>
+    <p>To provide intentional friction and digital wellbeing tracking, AppBrake requires certain sensitive Android permissions. We use these permissions exclusively for their stated on-device functions:</p>
+
+    <div class="permission-card">
+        <div class="permission-name">Accessibility Service (BIND_ACCESSIBILITY_SERVICE)</div>
+        <p>Used solely to detect when a user launches a protected app in real-time and display the intentional pause screen. <strong>We do NOT log keystrokes, read on-screen text, inspect passwords, or monitor personal messages.</strong></p>
+    </div>
+
+    <div class="permission-card">
+        <div class="permission-name">Usage Access (PACKAGE_USAGE_STATS)</div>
+        <p>Allows AppBrake to calculate your daily app open counts, screen time insights, and display accurate resistance statistics on your device.</p>
+    </div>
+
+    <div class="permission-card">
+        <div class="permission-name">Display Over Other Apps (SYSTEM_ALERT_WINDOW)</div>
+        <p>Enables the AppBrake mindful pause screen to open seamlessly on top of a locked application before access is granted.</p>
+    </div>
+
+    <div class="permission-card">
+        <div class="permission-name">Foreground Service & Notifications</div>
+        <p>Ensures the background monitoring watchdog remains active and displays persistent active session notifications as mandated by Android OS.</p>
+    </div>
+
+    <h2>4. Advertising & Third-Party SDKs</h2>
+    <p>AppBrake displays advertisements to support ongoing development through <strong>Meta Audience Network (Facebook)</strong>. The Meta SDK may collect certain technical device parameters to serve relevant ads, in accordance with Meta's privacy policies:</p>
+    <ul>
+        <li><strong>Google Advertising ID (AD_ID / GAID):</strong> A user-resettable unique identifier for advertising.</li>
+        <li><strong>Device Technical Information:</strong> Device model, operating system version, carrier, and network state.</li>
+    </ul>
+    <p>For more details on how Meta handles advertising data, please review the <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener noreferrer">Meta Privacy Policy</a> and <a href="https://www.facebook.com/about/ads" target="_blank" rel="noopener noreferrer">Meta Ad Settings</a>.</p>
+
+    <h2>5. Children's Privacy</h2>
+    <p>AppBrake is not directed toward children under the age of 13. We do not knowingly collect personal identifiable information from children.</p>
+
+    <h2>6. User Data Control & Deletion</h2>
+    <p>You have complete control over your data at all times:</p>
+    <ul>
+        <li><strong>Clear All History:</strong> You can reset all attempt history, challenge records, and custom settings directly inside the app under <em>Settings &rarr; Clear Data</em>.</li>
+        <li><strong>App Uninstall:</strong> Uninstalling the app permanently erases all locally stored database records from your device.</li>
+    </ul>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at:</p>
+    <p>📧 <strong>Email:</strong> <a href="mailto:zorifla@gmail.com">zorifla@gmail.com</a></p>
+
+    <footer>
+        &copy; 2026 AppBrake. All rights reserved.
+    </footer>
+</div>
+
+</body>
+</html>
